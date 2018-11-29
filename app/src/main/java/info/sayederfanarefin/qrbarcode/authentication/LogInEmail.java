@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class LogInEmail extends AppCompatActivity {
 EditText user_name,user_password;

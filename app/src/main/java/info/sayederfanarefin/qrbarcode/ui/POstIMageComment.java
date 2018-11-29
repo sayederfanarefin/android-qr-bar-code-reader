@@ -49,7 +49,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.comments;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.utils.database;

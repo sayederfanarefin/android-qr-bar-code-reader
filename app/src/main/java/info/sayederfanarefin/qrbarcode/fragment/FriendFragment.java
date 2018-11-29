@@ -39,7 +39,7 @@ import info.sayederfanarefin.qrbarcode.model.friends;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.ui.AddFriendActivity;
 import info.sayederfanarefin.qrbarcode.ui.FirstScreen;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.utils.database;
 import info.sayederfanarefin.qrbarcode.utils.values;
 

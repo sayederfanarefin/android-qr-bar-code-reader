@@ -15,7 +15,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import info.sayederfanarefin.qrbarcode.ChatBox_;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.ChatHeaderGroup;
 
 /**

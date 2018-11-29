@@ -39,7 +39,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 import info.sayederfanarefin.qrbarcode.model.Message;
 import info.sayederfanarefin.qrbarcode.model.users;

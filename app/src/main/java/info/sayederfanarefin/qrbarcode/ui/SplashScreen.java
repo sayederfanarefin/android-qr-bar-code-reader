@@ -8,7 +8,7 @@ import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class SplashScreen extends AwesomeSplash
 {

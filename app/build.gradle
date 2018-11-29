@@ -18,7 +18,7 @@ android {
         exclude 'META-INF/LGPL2.1'
     }
     defaultConfig {
-        applicationId "us.sayederfanarefin"
+        applicationId "info.sayederfanarefin.qrbarcode"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1

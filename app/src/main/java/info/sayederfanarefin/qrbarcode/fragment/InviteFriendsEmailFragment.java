@@ -32,7 +32,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import info.sayederfanarefin.qrbarcode.adapter.InviteFriendsContactAdapter;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.invite_contacts;
 
 import static com.google.android.gms.internal.zzagz.runOnUiThread;

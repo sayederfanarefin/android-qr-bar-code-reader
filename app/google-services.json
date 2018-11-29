@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "401248907781",
-    "firebase_url": "https://popisbackbaby.firebaseio.com",
-    "project_id": "popisbackbaby",
-    "storage_bucket": "popisbackbaby.appspot.com"
+    "project_number": "151203869690",
+    "firebase_url": "https://qr-and-barcode-be8da.firebaseio.com",
+    "project_id": "qr-and-barcode-be8da",
+    "storage_bucket": "qr-and-barcode-be8da.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:401248907781:android:0753850fbadaeb53",
+        "mobilesdk_app_id": "1:151203869690:android:9be7fc5028c76564",
         "android_client_info": {
-          "package_name": "us.sayederfanarefin"
+          "package_name": "info.sayederfanarefin.qrbarcode"
         }
       },
       "oauth_client": [
         {
-          "client_id": "401248907781-f1un7c5hsfvm2rjkb16drvsb4i5bge3k.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "us.sayederfanarefin",
-            "certificate_hash": "fa37c96fc6734f732f0e0e917de705c3daf55b74"
-          }
-        },
-        {
-          "client_id": "401248907781-esb26o6ftjhbmvo2qk0pudge2bvlis6j.apps.googleusercontent.com",
+          "client_id": "151203869690-ksbm3akeaontastg00g1qm8pikv73lse.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAGytXqFxKBt15SMQnUV3U4K5FxYS9H5xA"
+          "current_key": "AIzaSyDZY9tzw-7SbZdvhQlT7TYaosRAGK3gdMA"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "401248907781-esb26o6ftjhbmvo2qk0pudge2bvlis6j.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

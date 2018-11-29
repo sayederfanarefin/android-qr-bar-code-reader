@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class NotificationActivity extends AppCompatActivity {
 

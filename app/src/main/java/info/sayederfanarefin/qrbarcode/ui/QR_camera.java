@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.utils.PointsOverlayView;
 
 public class QR_camera extends AppCompatActivity {

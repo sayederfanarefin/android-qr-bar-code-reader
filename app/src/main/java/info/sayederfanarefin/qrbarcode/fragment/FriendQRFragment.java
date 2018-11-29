@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.lang.reflect.Field;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.ui.ProfileActivityFriend;
 import info.sayederfanarefin.qrbarcode.ui.QR_camera;

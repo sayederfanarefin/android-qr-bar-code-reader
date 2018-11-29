@@ -58,7 +58,7 @@ import info.sayederfanarefin.qrbarcode.MainActivity;
 import info.sayederfanarefin.qrbarcode.authentication.LogInEmailChange;
 import info.sayederfanarefin.qrbarcode.authentication.PasswordSet;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.utils.values;
 

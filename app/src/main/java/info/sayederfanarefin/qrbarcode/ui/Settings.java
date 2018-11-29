@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 import butterknife.BindView;
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class Settings extends AppCompatActivity {
     private Toolbar mToolBar;

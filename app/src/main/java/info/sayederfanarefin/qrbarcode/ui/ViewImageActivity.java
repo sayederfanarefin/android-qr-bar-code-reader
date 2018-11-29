@@ -36,7 +36,7 @@ import java.util.TimeZone;
 import info.sayederfanarefin.qrbarcode.Timleline_showComments;
 import info.sayederfanarefin.qrbarcode.Timleline_showlikes;
 import info.sayederfanarefin.qrbarcode.model.Like;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.comments;
 import info.sayederfanarefin.qrbarcode.model.post;
 import info.sayederfanarefin.qrbarcode.model.users;

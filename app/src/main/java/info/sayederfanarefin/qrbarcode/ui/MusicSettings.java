@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class MusicSettings extends AppCompatActivity {
     private Toolbar mToolBar;

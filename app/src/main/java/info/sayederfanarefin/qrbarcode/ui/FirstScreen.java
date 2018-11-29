@@ -7,9 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.authentication.CreateProfile;
 import info.sayederfanarefin.qrbarcode.authentication.LoginPhone;
-import info.sayederfanarefin.R;
+
 
 public class FirstScreen extends AppCompatActivity {
 

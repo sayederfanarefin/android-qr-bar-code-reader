@@ -62,7 +62,7 @@ import java.util.Date;
 import info.sayederfanarefin.qrbarcode.ChatBox_;
 import info.sayederfanarefin.qrbarcode.MainActivity;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.post;
 import info.sayederfanarefin.qrbarcode.model.timeline_post;
 import info.sayederfanarefin.qrbarcode.model.users;

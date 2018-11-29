@@ -10,8 +10,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.adapter.ViewPagerAdapter_2;
-import info.sayederfanarefin.R;
+
+
 
 public class AddFriendActivity extends AppCompatActivity {
     private int[] pageIcon = {R.drawable.ic_invite_friends, R.drawable.ic_qr,  R.drawable.ic_search_friends};

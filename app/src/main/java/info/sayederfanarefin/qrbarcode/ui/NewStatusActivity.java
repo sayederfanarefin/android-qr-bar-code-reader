@@ -57,7 +57,7 @@ import java.util.Random;
 import java.util.TimeZone;
 
 import info.sayederfanarefin.qrbarcode.MainActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.post;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.utils.database;

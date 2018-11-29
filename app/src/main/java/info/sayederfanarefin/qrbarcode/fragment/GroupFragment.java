@@ -29,7 +29,7 @@ import java.util.Map;
 
 import info.sayederfanarefin.qrbarcode.adapter.RecentChatsAdapterGroup;
 import info.sayederfanarefin.qrbarcode.NewGroupChatActivity;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 import info.sayederfanarefin.qrbarcode.model.Chat;
 import info.sayederfanarefin.qrbarcode.model.ChatHeaderGroup;

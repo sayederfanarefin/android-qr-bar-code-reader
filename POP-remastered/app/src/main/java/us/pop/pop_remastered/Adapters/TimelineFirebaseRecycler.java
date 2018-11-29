@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.model.post;
 import info.sayederfanarefin.model.timeline_header;
 import info.sayederfanarefin.model.timeline_post;

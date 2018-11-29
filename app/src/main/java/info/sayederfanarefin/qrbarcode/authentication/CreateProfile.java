@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.hbb20.CountryCodePicker;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 public class CreateProfile extends AppCompatActivity {
 

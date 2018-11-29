@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import net.glxn.qrgen.android.QRCode;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 
 public class My_QR extends AppCompatActivity {

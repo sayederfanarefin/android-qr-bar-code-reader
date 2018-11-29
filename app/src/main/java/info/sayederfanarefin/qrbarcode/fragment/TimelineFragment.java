@@ -47,7 +47,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.sayederfanarefin.qrbarcode.adapter.TimelineFirebaseRecycler;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.model.post;
 import info.sayederfanarefin.qrbarcode.model.users;
 import info.sayederfanarefin.qrbarcode.ui.NewStatusActivity;

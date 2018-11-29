@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 
 
 /**

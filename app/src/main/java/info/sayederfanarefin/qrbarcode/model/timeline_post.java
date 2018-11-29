@@ -43,7 +43,7 @@ import java.util.TimeZone;
 
 import info.sayederfanarefin.qrbarcode.Timleline_showComments;
 import info.sayederfanarefin.qrbarcode.Timleline_showlikes;
-import info.sayederfanarefin.R;
+import info.sayederfanarefin.qrbarcode.R;
 import info.sayederfanarefin.qrbarcode.ui.POstIMageComment;
 import info.sayederfanarefin.qrbarcode.ui.ReactActivity;
 import info.sayederfanarefin.qrbarcode.ui.ViewImageActivity;
