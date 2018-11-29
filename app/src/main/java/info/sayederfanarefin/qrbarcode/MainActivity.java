@@ -79,15 +79,6 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawer;
     private RelativeLayout drawer_2;
 
-    //Firebase
-    private FirebaseAuth mFirebaseAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
-
-    //databses
-    private DatabaseReference rootRef;
-    private FirebaseDatabase rootDb;
-    private DatabaseReference userRef;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -170,73 +161,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(navigation_items.get(position).equalsIgnoreCase("Logout")){
 
-                    AuthUI.getInstance().signOut(MainActivity.this);
-                    Intent intent = new Intent(MainActivity.this, FirstScreen.class);
-                    startActivity(intent);
                 }
             }
         });
 
-    }
-
-    private void init_using_firebase_user(FirebaseUser user){
-        if (user != null) {
-            userRef.child(user.getUid())
-                    .addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot snapshot) {
-                            populate_user_info(snapshot.getValue(users.class));
-                        }
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {}});
-
-        } else {
-            Intent intent = new Intent(MainActivity.this, FirstScreen.class);
-            startActivity(intent);
-            finish();
-        }
-    }
-    private void populate_user_info(users me){
-
-        if(me!=null){
-
-
-            if(me.getUsername() != null && !me.getUsername().equals("")){
-                user_nav_name.setText(me.getUsername());
-            }else{
-                user_nav_name.setText("");
-            }
-
-
-            if(me.getMood() != null && me.getMood() != ""){
-                user_nav_status.setText(me.getMood());
-            }
-
-           // String temp_propic = me.getProfilePicLocation();
-            if (me.getProfilePicLocation() != null ){
-                if(isAttached){
-                    Glide.with(user_nav_pro_pic.getContext())
-                            .load(me.getProfilePicLocation())
-                            .centerCrop()
-                            .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                            .bitmapTransform(new CropCircleTransformation(getApplicationContext()))
-                            .into(user_nav_pro_pic);
-                }
-
-            }
-        }else{
-            Log.v("----------", "empty users");
-        }
-        close_nav = (ImageButton) findViewById(R.id.close_nav);
-        close_nav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-                drawer.closeDrawer(GravityCompat.START);
-
-            }
-        });
     }
 
     @Override
@@ -339,19 +267,7 @@ public class MainActivity extends AppCompatActivity {
         });
         viewPager.setCurrentItem(0);
         toolbarText.setText("Home");
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        rootDb = database.getDatabase();
-        rootRef = rootDb.getReference();
-        userRef = rootRef.child("users");
-        userRef.keepSynced(true);
 
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                init_using_firebase_user(firebaseAuth.getCurrentUser());
-            }
-        };
-        init_using_firebase_user(mFirebaseAuth.getCurrentUser());
 
     }
 

@@ -31,20 +31,19 @@
         android:theme="@style/AppTheme">
 
 
-
         <activity
             android:name="info.sayederfanarefin.qrbarcode.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
 
             <!--<meta-data-->
-                <!--android:name="io.fabric.ApiKey"-->
-                <!--android:value="08c75743459c301a67813feff0f0f6f233a8b936"-->
-                <!--/>-->
+            <!--android:name="io.fabric.ApiKey"-->
+            <!--android:value="08c75743459c301a67813feff0f0f6f233a8b936"-->
+            <!--/>-->
 
 
-            </activity>
+        </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.FriendsListActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -55,20 +54,20 @@
             android:name="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
 
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity" >
-                <!-- The meta-data element is needed for versions lower than 4.1 -->
-                <meta-data
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value="info.sayederfanarefin.qrbarcode.MainActivity" />
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.sayederfanarefin.qrbarcode.MainActivity" />
         </activity>
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.ProfileActivityFriend"
             android:configChanges="orientation|screenSize|keyboardHidden"
 
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity" >
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -129,8 +128,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.NewChatActivity"
-            android:label="@string/title_activity_chat_box2"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_chat_box2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.NewGroupChatActivity"
@@ -138,48 +137,48 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ChatBox_"
-            android:label="@string/title_activity_chat_box_"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="@string/title_activity_chat_box_"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.EditMood"
-            android:label="Edit Mood"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="Edit Mood"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.QR_camera"
-            android:label="QR"
             android:configChanges="orientation|screenSize"
+            android:label="QR"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.ReactActivity"
-            android:label="React"
             android:configChanges="orientation|screenSize"
+            android:label="React"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
 
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.My_QR"
-            android:label="My QR Code"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="My QR Code"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.Friend_QR"
-            android:label="User QR Code"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="User QR Code"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.My_phone"
-            android:label="Registered Phone Number"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="Registered Phone Number"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -187,10 +186,10 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.My_phone_change"
-            android:label="Change Phone Number"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="Change Phone Number"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -198,10 +197,10 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.My_email_input"
-            android:label="Change Phone Number"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="Change Phone Number"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -209,10 +208,10 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.My_id"
-            android:label="My Id"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="My Id"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -220,10 +219,10 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.authentication.LogInEmailChange"
-            android:label="Change or Add Email"
-            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="Change or Add Email"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -231,10 +230,10 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.authentication.PasswordSet"
-            android:label="Change or Add Email"
-            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity" >
+            android:label="Change or Add Email"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -242,44 +241,43 @@
         </activity>
         <activity
             android:name="info.sayederfanarefin.qrbarcode.authentication.ReLoginPhone"
-            android:label="Re Log In"
-            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
-            />
+            android:label="Re Log In"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.NewStatusActivity"
-            android:label="New Status"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="New Status"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.Timleline_showlikes"
-            android:label="Likes"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="Likes"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.ViewImageActivity"
-            android:label="View Image"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
- <activity
+            android:label="View Image"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="info.sayederfanarefin.qrbarcode.Timleline_showComments"
+            android:configChanges="orientation|screenSize"
             android:label="View Comments"
-     android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-             android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity" >
-             <!-- The meta-data element is needed for versions lower than 4.1 -->
-             <meta-data
-                 android:name="android.support.PARENT_ACTIVITY"
-                 android:value="info.sayederfanarefin.qrbarcode.MainActivity" />
-         </activity>
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.sayederfanarefin.qrbarcode.MainActivity" />
+        </activity>
 
         <activity
             android:name="info.sayederfanarefin.qrbarcode.ui.POstIMageComment"
-            android:label="View Comments"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity" >
+            android:label="View Comments"
+            android:parentActivityName="info.sayederfanarefin.qrbarcode.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -295,8 +293,7 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"
-                tools:replace="android:resource"
-                />
+                tools:replace="android:resource" />
         </provider>
 
 

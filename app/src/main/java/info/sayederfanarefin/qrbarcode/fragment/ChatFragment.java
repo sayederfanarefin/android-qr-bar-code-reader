@@ -15,12 +15,7 @@ import java.lang.reflect.Field;
 
 import info.sayederfanarefin.qrbarcode.R;
 
-/**
- * Created by piashsarker on 7/10/17.
- */
-/**
- * Created by schmaedech on 30/06/17.
- */
+
 public class ChatFragment extends Fragment {
 
     LinearLayout buttonTopMessage, buttonTopGroup;

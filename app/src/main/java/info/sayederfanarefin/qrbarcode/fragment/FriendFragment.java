@@ -45,28 +45,15 @@ import info.sayederfanarefin.qrbarcode.utils.values;
 
 
 public class FriendFragment extends Fragment {
-    private FirebaseListAdapter mFriendAdapter;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
-    private FirebaseAuth mFirebaseAuth;
-    private String mUsername;
-    private ChildEventListener mChildEventListener;
-    private ValueEventListener mValueEventListener;
 
-    private ValueEventListener mUserDatabaseReferencecurrentUsergetUidValueEventListener;
     private RecyclerView friendsListView;
     private Button add_friend_button_empty;
 
     private boolean isAttached;
 
-    private DatabaseReference mUserDatabaseReference;
-    private DatabaseReference mUserDatabaseReferenceCurrentUser;
-    private DatabaseReference mFriendsDatabaseReferenceCurrentUser;
-    private DatabaseReference mFriendsDatabaseReference;
-    private FirebaseDatabase mFirebaseDatabase;
     private LinearLayout add_friend_floating;
     private RelativeLayout empty_view_friendsList, not_empty_friendsList;
-    private ValueEventListener friendsListValueEventListener;
-    private FirebaseUser currentUser;
+
     private LinearLayoutManager linearLayoutManager;
 
 
@@ -101,28 +88,6 @@ public class FriendFragment extends Fragment {
     @Override
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mFirebaseDatabase = database.getDatabase();
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        currentUser= mFirebaseAuth.getCurrentUser();
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-            currentUser= firebaseAuth.getCurrentUser();
-            if (currentUser != null) {
-                onInitialize(view);
-            } else {
-                Intent intent = new Intent(getActivity(), FirstScreen.class);
-                getActivity().startActivity(intent);
-            }
-            }
-        };
-
-        if (currentUser != null) {
-            onInitialize(view);
-        } else {
-            Intent intent = new Intent(getActivity(), FirstScreen.class);
-            getActivity().startActivity(intent);
-        }
 
         add_friend_floating.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,86 +103,15 @@ public class FriendFragment extends Fragment {
         getActivity().startActivity(intent);
     }
     private void onInitialize(View view) {
-        mUsername = currentUser.getDisplayName();
-        mFriendsDatabaseReference = mFirebaseDatabase.getReference().child(values.dbFriendsLocation);
-        mUserDatabaseReference = mFirebaseDatabase.getReference().child(values.dbUserLocation);
 
          friendsListView =  view.findViewById(R.id.friendsListView);
-       // populateListView();
-        mFriendsDatabaseReference.child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                populateListView();
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {}
-        });
+
     }
     FriendsFirebaseRecycler friendsListAdapter;
     int count = 0;
     int i=0;
 
     private void populateListView(){
-        mFriendsDatabaseReferenceCurrentUser = mFriendsDatabaseReference.child(currentUser.getUid());//.orderByChild("username");
-
-        friendsListValueEventListener = new ValueEventListener() {
-            final List<friends> friendsList= new ArrayList<friends>();
-            final List<users> friendsUsersList= new ArrayList<users>();
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot imageSnapshot : dataSnapshot.getChildren()) {
-
-                    friendsList.add(imageSnapshot.getValue(friends.class));
-
-                    count++;
-                }
-                if(count > 0){
-
-                    for( i=0; i < friendsList.size(); i++){
-                        mUserDatabaseReference.child(friendsList.get(i).getUid()).addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                friendsUsersList.add(dataSnapshot.getValue(users.class));
-                                if( i == count){
-                                    mUserDatabaseReference.child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
-                                        @Override
-                                        public void onDataChange(DataSnapshot dataSnapshot) {
-                                            friendsUsersList.add(dataSnapshot.getValue(users.class));
-                                            if( i == count){
-                                                empty_view_friendsList.setVisibility(View.GONE);
-                                                not_empty_friendsList.setVisibility(View.VISIBLE);
-                                                friendsListAdapter = new FriendsFirebaseRecycler(friendsUsersList,getContext());
-                                                friendsListView.setLayoutManager(linearLayoutManager);
-                                                friendsListView.setItemAnimator(new DefaultItemAnimator());
-                                                friendsListView.setAdapter(friendsListAdapter);
-                                            }
-                                        }
-                                        @Override
-                                        public void onCancelled(DatabaseError databaseError) {}
-                                    });
-
-                                }
-                            }
-                            @Override
-                            public void onCancelled(DatabaseError databaseError) {}
-                        });
-
-                    }
-
-                }else{
-                    empty_view_friendsList.setVisibility(View.VISIBLE);
-                    not_empty_friendsList.setVisibility(View.GONE);
-                }
-                }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-            };
-
-        mFriendsDatabaseReferenceCurrentUser.addValueEventListener(friendsListValueEventListener);
-
 
     }
 
@@ -257,9 +151,6 @@ public class FriendFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
 
-        if(mUserDatabaseReferenceCurrentUser != null){
-            mUserDatabaseReferenceCurrentUser.removeEventListener(mUserDatabaseReferencecurrentUsergetUidValueEventListener);
-        }
         isAttached = false;
         try {
             Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
@@ -271,9 +162,7 @@ public class FriendFragment extends Fragment {
         } catch (IllegalAccessException e) {
 
         }
-        if(mFriendsDatabaseReferenceCurrentUser!=null){
-            mFriendsDatabaseReferenceCurrentUser.removeEventListener(friendsListValueEventListener);
-        }
+
     }
 
 }
