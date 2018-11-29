@@ -187,15 +187,6 @@ public class TimelineFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
 
-        int currentVisiblePosition = 0;
-        currentVisiblePosition = ((LinearLayoutManager)timeline_self.getLayoutManager()).findFirstCompletelyVisibleItemPosition();
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("saved_pos",currentVisiblePosition);
-        editor.commit();
-        Log.v("-x--", "saving ... "+String.valueOf(currentVisiblePosition));
-
-
-        Log.v("=x=", "Info frag Detached");
         try {
             Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
             childFragmentManager.setAccessible(true);

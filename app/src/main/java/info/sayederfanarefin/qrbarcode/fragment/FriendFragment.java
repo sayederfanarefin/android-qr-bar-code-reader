@@ -45,20 +45,9 @@ import info.sayederfanarefin.qrbarcode.utils.values;
 
 
 public class FriendFragment extends Fragment {
-
-    private RecyclerView friendsListView;
-    private Button add_friend_button_empty;
-
     private boolean isAttached;
 
-    private LinearLayout add_friend_floating;
-    private RelativeLayout empty_view_friendsList, not_empty_friendsList;
-
-    private LinearLayoutManager linearLayoutManager;
-
-
     public FriendFragment() {
-
     }
     View view_;
     @Nullable
@@ -66,56 +55,19 @@ public class FriendFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view_ = inflater.inflate(R.layout.fragment_friends, container, false);
         setHasOptionsMenu(true);
-        add_friend_floating = view_.findViewById(R.id.add_frients_floating);
-        add_friend_button_empty = view_.findViewById(R.id.add_friend_button_empty);
-        add_friend_button_empty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                add_friend_button();
-            }
-        });
-
-        linearLayoutManager =new LinearLayoutManager(getContext());
-        linearLayoutManager.setStackFromEnd(true);
-        linearLayoutManager.setReverseLayout(true);
-
-        not_empty_friendsList = view_.findViewById(R.id.not_empty_friendsList);
-        empty_view_friendsList = view_.findViewById(R.id.empty_view_friendsList);
         return view_;
-
     }
 
     @Override
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        add_friend_floating.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                add_friend_button();
-            }
-        });
     }
-
 
     private void add_friend_button(){
         Intent intent = new Intent(getActivity(), AddFriendActivity.class);
         getActivity().startActivity(intent);
     }
-    private void onInitialize(View view) {
-
-         friendsListView =  view.findViewById(R.id.friendsListView);
-
-    }
-    FriendsFirebaseRecycler friendsListAdapter;
-    int count = 0;
-    int i=0;
-
-    private void populateListView(){
-
-    }
-
-
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -125,7 +77,6 @@ public class FriendFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
             case R.id.action_search_friends:
                 Intent intent = new Intent(getActivity(), AddFriendActivity.class);
